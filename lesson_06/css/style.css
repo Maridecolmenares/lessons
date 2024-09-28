@@ -70,7 +70,7 @@ h1 {
 }
 
 .block-4 {
-    width: 500px;
+    max-width: 500px;
     margin-left: 450px;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -146,8 +146,8 @@ div {
 }
 
 .end {
-    margin-left: 600px;
     margin-top: 150px;
+    text-align: center;
     font-size: 20px;
     font-weight: 600;
 }
@@ -157,7 +157,7 @@ img {
 }
 
 .conteiner-1 {
-    width: 1250px;
+    max-width: 1250px;
     height: 660px;
     margin-top: 150px;
     margin-left: 43px;
@@ -214,14 +214,14 @@ img {
 }
 
 .conteiner-2 {
-    width: 1920px;
-    height: 1130px;
+    /* width: 1920px;
+    height: 1130px; */
     margin-top: 150px;
     background: url("../img/middle_logo.svg") center / 470px no-repeat,
-        url("../img/fade_bottom.svg") 0 55% / 1920px no-repeat,
-        url("../img/fade_top.svg") 0 0 / 1920px no-repeat,
-        url("../img/movies.jpg") 0 0 / 1920px no-repeat,
-        url("../img/image.svg") 0 0 / 1920px no-repeat;
+        linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%),
+        linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%),
+        url("../img/movies.jpg") 0 0 / cover no-repeat,
+        url("../img/image.svg") 0 0 / cover no-repeat;
     background-color: #141414;
 }
 
