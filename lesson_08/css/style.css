@@ -1,0 +1,135 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    padding: 10px;
+}
+
+body {
+    padding-inline: 20px;
+    background-color: #28293E;
+    font-family: "Epilogue";
+    font-weight: 800;
+    font-size: 18px;
+    color: #F3D1BF;
+
+}
+
+.header__title {
+    margin-block-start: 25px;
+    text-align: center;
+    color: #F3D1BF;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.footer__title {
+    margin-block-start: 25px;
+    text-align: center;
+    color: #F3D1BF;
+    font-size: 34px;
+}
+
+.main {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding-inline: 20px;
+
+}
+
+.block {
+    vertical-align: top;
+    padding: 10px;
+    background: #F3D1BF;
+    color: #28293E;
+    border: 2px solid transparent;
+    border-radius: 12px;
+}
+
+.block img {
+    vertical-align: middle;
+}
+
+
+.block:hover {
+    background: #f3b08c;
+}
+
+.block:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.block p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+
+.image-02 {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background: #F3D1BF;
+    margin-bottom: 15px;
+}
+
+.image-block-02 {
+
+    vertical-align: top;
+    padding: 20px;
+    background-color: #F3D1BF;
+    border-radius: 8px;
+    color: #28293E;
+    margin-bottom: 15px;
+}
+
+.image-block-02:hover {
+    background: #f3b08c;
+}
+
+.image-block-05 {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 8px;
+    background: #F3D1BF;
+    margin-bottom: 15px;
+    color: #28293E;
+}
+
+.image-block-05:hover {
+    background: #f3b08c;
+}
+
+.image-block-05 p {
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.image-05 {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background: #F3D1BF;
+}
+
+.image-14 {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: justify;
+    font-size: 26px;
+    margin-inline-end: 20px;
+    margin-bottom: 20px;
+}
