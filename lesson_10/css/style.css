@@ -134,9 +134,6 @@ body {
     text-align: center;
 }
 
-/* .card__text:hover {
-    color: #FFF;
-} */
 
 .card__buttom {
     background-color: #FFF;
@@ -164,4 +161,10 @@ body {
     position: absolute;
     top: 477px;
     left: 48px;
+}
+
+.container-03__image {
+    position: fixed;
+    top: 50%;
+    left: 85%;
 }
