@@ -1,0 +1,464 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+.car {
+    padding: 100px 0;
+    height: 100vh;
+    background: url('../img/winter.jpg');
+    background-size: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+.body-car {
+    height: 300px;
+    width: 600px;
+    position: relative;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    perspective: 400px;
+    perspective-origin: center;
+}
+
+.element-top {
+    height: 150px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 50% 50% 5px 5px;
+    border-left: 10px solid rgb(218, 44, 44);
+    border-top: 10px solid rgb(218, 44, 44);
+    border-right: 10px solid rgb(218, 44, 44);
+    background-color: rgb(250, 50, 50);
+    transform: rotateX(45deg);
+}
+
+.element-bottom {
+    height: 150px;
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 30% 50% 15px 15px;
+    background-color: rgb(250, 50, 50);
+    border-left: 10px solid rgb(218, 44, 44);
+    border-top: 10px solid rgb(218, 44, 44);
+    border-right: 10px solid rgb(218, 44, 44);
+    border-bottom: 10px solid rgb(218, 44, 44);
+    box-shadow:
+        0px 115px 51px -55px rgba(0, 0, 0, 0.93);
+    position: absolute;
+    top: 110px;
+    left: 80px;
+    z-index: -1;
+}
+
+
+
+.up-wheel-front {
+    position: absolute;
+    top: 200px;
+    left: 450px;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 200px;
+    border-radius: 150px 150px 0 0;
+    background: rgb(250, 117, 117);
+    background: radial-gradient(circle, rgba(250, 117, 117, 1) 12%, rgba(255, 51, 51, 1) 100%);
+}
+
+.up-wheel-back {
+    position: absolute;
+    top: 200px;
+    left: 180px;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 200px;
+    border-radius: 150px 150px 0 0;
+    background: rgb(250, 117, 117);
+    background: radial-gradient(circle, rgba(250, 117, 117, 1) 12%, rgba(255, 51, 51, 1) 100%);
+}
+
+.up-wheel-front-background {
+    position: absolute;
+    top: 225px;
+    left: 450px;
+    transform: translate(-50%, -50%);
+    height: 70px;
+    width: 150px;
+    border-radius: 150px 150px 0 0;
+    background-color: rgb(218, 44, 44);
+}
+
+.up-wheel-back-background {
+    position: absolute;
+    top: 225px;
+    left: 180px;
+    transform: translate(-50%, -50%);
+    height: 70px;
+    width: 150px;
+    border-radius: 150px 150px 0 0;
+    background-color: rgb(218, 44, 44);
+}
+
+.wheel-front {
+    background: rgb(215, 227, 221);
+    background: radial-gradient(circle, rgba(215, 227, 221, 1) 21%, rgba(65, 66, 69, 1) 100%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 15px solid rgb(26, 26, 26);
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    z-index: 2;
+}
+
+.wheel-back {
+    background: rgb(215, 227, 221);
+    background: radial-gradient(circle, rgba(215, 227, 221, 1) 21%, rgba(65, 66, 69, 1) 100%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 15px solid rgb(26, 26, 26);
+    position: absolute;
+    top: 200px;
+    left: 130px;
+    z-index: 2;
+}
+
+.headlight-left {
+    position: absolute;
+    top: 200px;
+    left: 73px;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 15px;
+    border-radius: 50px 5px 5px 50px;
+    background: rgb(245, 245, 100);
+    background: radial-gradient(circle, rgba(245, 245, 100, 1) 49%, rgba(179, 179, 57, 1) 76%);
+    z-index: 3;
+}
+
+.headlight-right {
+    position: absolute;
+    top: 200px;
+    left: 590px;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 20px;
+    border-radius: 5px 50px 50px 5px;
+    background: rgb(245, 245, 100);
+    background: radial-gradient(circle, rgba(245, 245, 100, 1) 49%, rgba(179, 179, 57, 1) 76%);
+    z-index: 3;
+}
+
+.window-left {
+    height: 75px;
+    width: 155px;
+    position: absolute;
+    top: 50px;
+    left: 140px;
+    transform: rotate3d(0, 1, 0, -20deg);
+    border-radius: 70px 5px 5px 5px;
+    background: rgb(197, 235, 245);
+    background: radial-gradient(circle, rgba(197, 235, 245, 1) 39%, rgba(94, 145, 185, 1) 100%);
+    border: 5px solid rgb(218, 44, 44);
+}
+
+.window-right {
+    height: 75px;
+    width: 170px;
+    position: absolute;
+    top: 50px;
+    left: 290px;
+    transform: rotate3d(0, 1, 0, 20deg);
+    border-radius: 5px 70px 5px 5px;
+    background: rgb(197, 235, 245);
+    background: radial-gradient(circle, rgba(197, 235, 245, 1) 39%, rgba(94, 145, 185, 1) 100%);
+    border: 5px solid rgb(218, 44, 44);
+}
+
+.door {
+    height: 130px;
+    width: 155px;
+    position: absolute;
+    top: 120px;
+    left: 293px;
+    background: rgb(255, 51, 51);
+    background: linear-gradient(266deg, rgba(255, 51, 51, 1) 74%, rgba(204, 51, 51, 1) 100%);
+    border-left: 5px solid rgb(218, 44, 44);
+    border-right: 5px solid rgb(218, 44, 44);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.tree {
+    display: inline-block;
+    z-index: 5;
+    position: absolute;
+    top: -120px;
+    left: 120px;
+    transform: rotateX(25deg);
+
+}
+
+.bamper-rear {
+    position: absolute;
+    top: 230px;
+    left: 70px;
+    height: 20px;
+    width: 50px;
+    border-radius: 30px;
+    background: rgb(79, 78, 79);
+    background: rgb(79, 78, 79);
+    background: linear-gradient(180deg, rgba(79, 78, 79, 1) 0%, rgba(175, 186, 180, 1) 30%, rgba(202, 217, 209, 1) 50%, rgba(168, 179, 173, 1) 70%, rgba(79, 78, 79, 1) 100%);
+    z-index: 3;
+}
+
+.bamper-front {
+    position: absolute;
+    top: 230px;
+    left: 543px;
+    height: 20px;
+    width: 50px;
+    border-radius: 30px;
+    background: rgb(79, 78, 79);
+    background: rgb(79, 78, 79);
+    background: linear-gradient(180deg, rgba(79, 78, 79, 1) 0%, rgba(175, 186, 180, 1) 30%, rgba(202, 217, 209, 1) 50%, rgba(168, 179, 173, 1) 70%, rgba(79, 78, 79, 1) 100%);
+    z-index: 3;
+}
+
+.bamper-lateral {
+    position: absolute;
+    top: 250px;
+    left: 230px;
+    height: 10px;
+    width: 170px;
+    border-radius: 30px;
+    background: rgb(79, 78, 79);
+    background: rgb(79, 78, 79);
+    background: linear-gradient(180deg, rgba(79, 78, 79, 1) 0%, rgba(175, 186, 180, 1) 30%, rgba(202, 217, 209, 1) 50%, rgba(168, 179, 173, 1) 70%, rgba(79, 78, 79, 1) 100%);
+    z-index: 3;
+}
+
+.handle-door {
+    position: absolute;
+    top: 130px;
+    left: 305px;
+    height: 10px;
+    width: 30px;
+    border-radius: 30px;
+    background: rgb(79, 78, 79);
+    background: rgb(79, 78, 79);
+    background: linear-gradient(180deg, rgba(79, 78, 79, 1) 0%, rgba(175, 186, 180, 1) 30%, rgba(202, 217, 209, 1) 50%, rgba(168, 179, 173, 1) 70%, rgba(79, 78, 79, 1) 100%);
+    z-index: 3;
+}
+
+.lights {
+    height: 300px;
+    width: 550px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    z-index: 50;
+}
+
+.lights:hover {
+    box-shadow:
+        520px 0px 61px -70px rgba(226, 246, 41, 0.422),
+        -525px 0px 61px -70px rgba(226, 246, 41, 0.422);
+}
+
+.tree-lights {
+    height: 400px;
+    width: 350px;
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+    opacity: 0;
+    z-index: 50;
+}
+
+.lights:hover .tree-lights {
+    opacity: 1;
+}
+
+.tree-lights:hover {
+    opacity: 1;
+}
+
+.tree-lights__light-01 {
+    background-color: rgb(246, 246, 153);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 7px rgb(246, 246, 153);
+    position: absolute;
+    top: 60px;
+    left: 70px;
+    z-index: 50;
+}
+
+.tree-lights__light-02 {
+    background-color: rgb(246, 246, 153);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 7px rgb(246, 246, 153);
+    position: absolute;
+    top: 130px;
+    left: 55px;
+    z-index: 50;
+}
+
+.tree-lights__light-03 {
+    background-color: rgb(246, 246, 153);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 7px rgb(246, 246, 153);
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    z-index: 50;
+}
+
+.tree-lights__light-04 {
+    background-color: rgb(246, 246, 153);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 7px rgb(246, 246, 153);
+    position: absolute;
+    top: 170px;
+    left: 90px;
+    z-index: 50;
+}
+
+.tree-lights__light-05 {
+    background-color: rgb(246, 246, 153);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 7px rgb(246, 246, 153);
+    position: absolute;
+    top: 110px;
+    left: 90px;
+    z-index: 50;
+}
+
+.tree-lights__light-06 {
+    background-color: rgb(246, 246, 153);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 7px rgb(246, 246, 153);
+    position: absolute;
+    top: 80px;
+    left: 140px;
+    z-index: 50;
+}
+
+.tree-lights__light-07 {
+    background-color: rgb(246, 246, 153);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 7px rgb(246, 246, 153);
+    position: absolute;
+    top: 130px;
+    left: 140px;
+    z-index: 50;
+}
+
+.tree-lights__light-08 {
+    background-color: rgb(246, 246, 153);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 7px rgb(246, 246, 153);
+    position: absolute;
+    top: 170px;
+    left: 170px;
+    z-index: 50;
+}
+
+.tree-lights__light-09 {
+    background-color: rgb(246, 246, 153);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 7px rgb(246, 246, 153);
+    position: absolute;
+    top: 90px;
+    left: 180px;
+    z-index: 50;
+}
+
+.tree-lights__light-10 {
+    background-color: rgb(246, 246, 153);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 7px rgb(246, 246, 153);
+    position: absolute;
+    top: 130px;
+    left: 200px;
+    z-index: 50;
+}
+
+.tree-lights__light-11 {
+    background-color: rgb(246, 246, 153);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 7px rgb(246, 246, 153);
+    position: absolute;
+    top: 100px;
+    left: 230px;
+    z-index: 50;
+}
+
+.tree-lights__light-12 {
+    background-color: rgb(246, 246, 153);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 7px rgb(246, 246, 153);
+    position: absolute;
+    top: 140px;
+    left: 250px;
+    z-index: 50;
+}
+
+.tree-lights__light-13 {
+    background-color: rgb(246, 246, 153);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 7px rgb(246, 246, 153);
+    position: absolute;
+    top: 120px;
+    left: 280px;
+    z-index: 50;
+}
+
+.title {
+    color: rgb(25, 19, 106);
+    font-family: Dancing Script;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.footer {
+    color: rgb(25, 19, 106);
+    font-family: Dancing Script;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
