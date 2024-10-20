@@ -205,16 +205,6 @@
 
 }
 
-/* .body-car:hover .tree {
-    opacity: 0;
-}
-
-.body-car:hover .tree {
-    background-image: url("../img/tree-lights.png");
-    z-index: 7;
-
-} */
-
 .bamper-rear {
     position: absolute;
     top: 230px;
