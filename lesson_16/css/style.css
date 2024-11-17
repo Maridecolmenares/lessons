@@ -1,0 +1,246 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+    font-family: "Epilogue", sans-serif;
+    font-size: 18px;
+    background-color: #fff;
+}
+
+.header {
+    color: #fff;
+    background-color: #28293E;
+}
+
+.footer {
+    color: #fff;
+    background-color: #28293E;
+    font-family: Epilogue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    padding-block: 10px;
+    gap: 15px;
+    justify-content: center;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper>main {
+    flex-grow: 1;
+}
+
+.header__container {
+    max-width: 1280px;
+    padding-inline: 15px;
+    margin: 0 auto;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    padding-block: 10px;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    max-width: 100%;
+    column-gap: 14px;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+}
+
+.logo__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.header__actions {
+    flex-basis: 152px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 15px;
+    position: relative;
+    z-index: 5;
+}
+
+.actions-header__button {
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 17px 34px 16px 35px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    transition-duration: 0.3s;
+}
+
+.actions-header__button:hover {
+    transform: translateY(2px);
+    color: #EF6D58;
+    border-color: #EF6D58;
+}
+
+.header__menu {
+    flex-basis: 515px;
+    font-weight: 400;
+}
+
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 3px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 16px;
+
+}
+
+.menu__item {
+    transition-duration: 0.5s;
+}
+
+.menu__item:hover {
+    color: #EF6D58;
+    transform: translateY(2px);
+}
+
+.icon-menu {
+    display: none;
+}
+
+.actions-header__button {
+    font-weight: 900;
+}
+
+@media (max-width: 768px) {
+    .header__container {
+        min-height: 70px;
+    }
+
+    .header__logo {
+        column-gap: 5px;
+    }
+
+    .icon-menu {
+        flex-shrink: 0;
+        flex-basis: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon-menu span {
+        margin-block: 6px;
+    }
+
+    .icon-menu span,
+    .icon-menu::before,
+    .icon-menu::after {
+        transition: all 0.3s;
+        content: "";
+        height: 2px;
+        width: 100%;
+        background-color: #EF6D58;
+    }
+
+    .menu__body {
+        position: fixed;
+        inset-inline-start: 100%;
+        inset-block-start: 0;
+        inline-size: 100%;
+        block-size: 100%;
+        z-index: 2;
+
+        transition: inset-inline-start 0.3s;
+        overflow: auto;
+        padding: 100px 15px 30px;
+        background-color: #28293E;
+    }
+
+    .menu__body::before {
+        content: "";
+        position: fixed;
+        block-size: 80px;
+        inline-size: 100%;
+        inset-inline-start: 100%;
+        inset-block-start: 0;
+        z-index: 3;
+        background-color: #28293E;
+        transition: inset-inline-start 0.3s;
+    }
+
+    .menu__list {
+        flex-direction: column;
+        border: none;
+        align-items: flex-end;
+        background-color: transparent;
+        row-gap: 50px;
+    }
+
+    .menu__link {
+        font-size: 24px;
+        padding: 0;
+    }
+
+    .menu__link.active {
+        text-decoration: underline;
+        background-color: transparent;
+    }
+
+    .open-menu .menu__body,
+    .open-menu .menu__body::before {
+        inset-inline-start: 0;
+    }
+
+    .open-menu .icon-menu span {
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+
+    .open-menu .icon-menu::before {
+        transform: rotate(45deg) translateY(1.5px);
+    }
+
+    .open-menu .icon-menu::after {
+        transform: rotate(-45deg) translateY(-1.5px);
+    }
+}
+
+@media (max-width: 370px) {
+
+    .logo__title {
+        font-size: 20px;
+    }
+
+    .logo__image {
+        width: 40px;
+    }
+
+    .actions-header__button {
+        padding: 15px 30px 14px 31px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .logo__title {
+        display: none;
+    }
+}
