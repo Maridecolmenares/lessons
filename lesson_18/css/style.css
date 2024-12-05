@@ -108,7 +108,7 @@
     }
 }
 
-.header {
+.header__title {
     color: #28293E;
     font-family: "Great Vibes";
     font-size: 40px;
@@ -118,7 +118,7 @@
     padding-bottom: 10px;
 }
 
-.footer {
+.footer__title {
     color: #28293E;
     font-family: "Great Vibes";
     font-size: 30px;
